@@ -180,7 +180,7 @@ const clearInputs = () => {
 						{{ resultMessage ? resultMessage : "Type your words ..." }}
 					</h1>
 					<div
-						class="border-b-[1px] border-zinc-800 border-opacity-10 mt-[75px] mb-10"
+						class="border-b-[1px] border-zinc-800 border-opacity-10 mt-[100px] mb-10"
 					></div>
 					<h2
 						class="text-[16px] font-medium mt-2 mx-6 uppercase text-zinc-500"
