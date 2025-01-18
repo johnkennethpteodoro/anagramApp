@@ -71,9 +71,7 @@ const clearInputs = () => {
 
 <template>
 	<div class="bg-zinc-900 h-screen">
-		<div
-			class="bg-layout absolute inset-0 m-auto w-full h-screen opacity-20 z-10 blur-[1.5px]"
-		></div>
+		<div class="bg-layout absolute inset-0 m-auto w-full h-screen opacity-40 z-10"></div>
 		<div class="xl:block lg:block md:hidden sm:hidden hidden">
 			<div
 				class="bg-zinc-900 rounded-b-full w-[300px] h-[150px] absolute z-20 left-[500px]"
