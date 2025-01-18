@@ -4,8 +4,6 @@ A simple web app built with Vue.js for the frontend and Tailwind CSS for styling
 
 ## Features
 
-### `npm start`
-
 ## Installation
 
 1. Clone the repository:
