@@ -70,9 +70,9 @@ const clearInputs = () => {
 </script>
 
 <template>
-	<div class="bg-zinc-900 h-screen">
-		<div class="bg-layout absolute inset-0 m-auto w-full h-screen opacity-40 z-10"></div>
-		<div class="xl:block lg:block md:hidden sm:hidden hidden">
+	<div class="h-screen bg-zinc-900">
+		<div class="absolute inset-0 z-10 w-full h-screen m-auto bg-layout opacity-40"></div>
+		<div class="hidden xl:block lg:block md:hidden sm:hidden">
 			<div
 				class="bg-zinc-900 rounded-b-full w-[300px] h-[150px] absolute z-20 left-[500px]"
 			></div>
@@ -94,53 +94,61 @@ const clearInputs = () => {
 			></div>
 		</div>
 		<h1
-			class="flex gap-5 justify-center absolute xl:top-32 lg:top-32 md:top-8 sm:top-8 top-8 text-white text-center w-full text-[25px] uppercase tracking-widest font-extrabold z-30"
+			class="flex gap-5 justify-center absolute xl:top-32 lg:top-32 md:top-8 sm:top-8 top-4 text-white text-center w-full text-[25px] uppercase tracking-widest font-extrabold z-30"
 		>
 			Anagram
 		</h1>
 		<ul
-			class="flex gap-16 text-[14px] justify-center absolute xl:top-56 lg:top-56 md:top-28 sm:top-28 top-28 text-zinc-500 font-semibold text-center w-full z-20 uppercase"
+			class="flex gap-12 xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[13px] text-[12px] justify-center absolute xl:top-56 lg:top-56 md:top-28 sm:top-28 top-20 text-zinc-500 font-semibold text-center w-full z-20 uppercase"
 		>
 			<li><a href="">About</a></li>
 			<li><a href="">Checker</a></li>
 			<li><a href="">FAQ</a></li>
 			<li><a href="">Contact</a></li>
 		</ul>
-		<div class="flex justify-center h-full w-full items-center">
+		<div class="flex items-center justify-center w-full h-full">
 			<div
 				class="xl:grid xlgrid-cols-2 lg:grid lg:grid-cols-2 md:grid md:grid-cols-1 sm:grid sm:grid-cols-1 md:mx-16 xl:mx-0 lg:mx-0 mx-5 grid grid-cols-1 w-[1000px] gap-10"
 			>
-				<div class="py-6 bg-zinc-950 rounded-xl z-20">
-					<h1 class="text-white mb-5 mx-6 uppercase tracking-wider z-50">
+				<div class="z-20 py-6 bg-zinc-950 rounded-xl">
+					<h1 class="z-50 mx-6 mb-5 tracking-wider text-white uppercase">
 						Anagram checker
 					</h1>
 
-					<div class="flex justify-between items-center mb-3 mx-6">
-						<h1 class="text-zinc-400 text-[14px] font-medium uppercase tracking-wider">
+					<div
+						class="items-center justify-between block mx-6 xl:flex lg:flex md:block sm:block mb-9"
+					>
+						<h1
+							class="text-zinc-400 text-[14px] font-medium uppercase tracking-wider xl:mb-0 lg:mb-0 md:mb-2 sm:mb-2 mb-2"
+						>
 							First word
 						</h1>
 						<input
 							v-model="isText1"
 							type="text"
-							class="w-[250px] border border-zinc-600 border-opacity-50 rounded-lg px-2.5 py-1.5 text-[14px] focus:border focus:border-zinc-700 focus:outline-none bg-zinc-800 text-white"
+							class="xl:w-[250px] lg:w-[250px] md:w-full sm:w-full w-full border border-zinc-600 border-opacity-50 rounded-lg px-2.5 py-1.5 text-[14px] focus:border focus:border-zinc-700 focus:outline-none bg-zinc-800 text-white"
 							placeholder="Enter a word"
 						/>
 					</div>
-					<div class="flex justify-between items-center mb-9 mx-6">
-						<h1 class="text-zinc-400 text-[14px] font-medium uppercase tracking-wider">
+					<div
+						class="items-center justify-between block mx-6 xl:flex lg:flex md:block sm:block mb-9"
+					>
+						<h1
+							class="text-zinc-400 text-[14px] font-medium uppercase tracking-wider xl:mb-0 lg:mb-0 md:mb-2 sm:mb-2 mb-2"
+						>
 							Second word
 						</h1>
 						<input
 							v-model="isText2"
 							type="text"
-							class="w-[250px] border border-zinc-600 border-opacity-50 rounded-lg px-2.5 py-1.5 text-[14px] focus:border focus:border-zinc-700 focus:outline-none bg-zinc-800 text-white"
+							class="xl:w-[250px] lg:w-[250px] md:w-full sm:w-full w-full border border-zinc-600 border-opacity-50 rounded-lg px-2.5 py-1.5 text-[14px] focus:border focus:border-zinc-700 focus:outline-none bg-zinc-800 text-white"
 							placeholder="Enter a word"
 						/>
 					</div>
 
 					<div class="border-b-[1px] border-zinc-800"></div>
 
-					<div class="w-full flex justify-end gap-2">
+					<div class="flex justify-end w-full gap-2">
 						<button
 							@click="clearInputs"
 							class="text-white uppercase mt-7 bg-zinc-800 px-3 py-1.5 text-[14px] rounded-lg"
@@ -155,8 +163,8 @@ const clearInputs = () => {
 						</button>
 					</div>
 				</div>
-				<div class="bg-white rounded-xl py-6 z-20">
-					<h1 class="text-black mb-5 font-semibold mx-6 uppercase tracking-wider">
+				<div class="z-20 py-6 bg-white rounded-xl">
+					<h1 class="mx-6 mb-5 font-semibold tracking-wider text-black uppercase">
 						Anagram check results
 					</h1>
 					<h1
