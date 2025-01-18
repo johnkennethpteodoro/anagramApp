@@ -108,10 +108,10 @@ const clearInputs = () => {
 		</ul>
 		<div class="flex items-center justify-center w-full h-full">
 			<div
-				class="xl:grid xlgrid-cols-2 lg:grid lg:grid-cols-2 md:grid md:grid-cols-1 sm:grid sm:grid-cols-1 md:mx-16 xl:mx-0 lg:mx-0 mx-5 grid grid-cols-1 w-[1000px] gap-10"
+				class="xl:grid xlgrid-cols-2 lg:grid lg:grid-cols-2 md:grid md:grid-cols-1 sm:grid sm:grid-cols-1 md:mx-16 xl:mx-0 lg:mx-0 mx-5 grid grid-cols-1 w-[1000px] gap-7"
 			>
-				<div class="z-20 py-6 bg-zinc-950 rounded-xl">
-					<h1 class="z-50 mx-6 mb-5 tracking-wider text-white uppercase">
+				<div class="z-20 py-6 bg-zinc-950 rounded-xl box-shadow">
+					<h1 class="z-50 mx-6 mb-5 tracking-widest text-white uppercase text-[14px]">
 						Anagram checker
 					</h1>
 
@@ -119,7 +119,7 @@ const clearInputs = () => {
 						class="items-center justify-between block mx-6 xl:flex lg:flex md:block sm:block mb-9"
 					>
 						<h1
-							class="text-zinc-400 text-[14px] font-medium uppercase tracking-wider xl:mb-0 lg:mb-0 md:mb-2 sm:mb-2 mb-2"
+							class="text-zinc-400 text-[12px] font-medium uppercase tracking-wider xl:mb-0 lg:mb-0 md:mb-2 sm:mb-2 mb-2"
 						>
 							First word
 						</h1>
@@ -134,7 +134,7 @@ const clearInputs = () => {
 						class="items-center justify-between block mx-6 xl:flex lg:flex md:block sm:block mb-9"
 					>
 						<h1
-							class="text-zinc-400 text-[14px] font-medium uppercase tracking-wider xl:mb-0 lg:mb-0 md:mb-2 sm:mb-2 mb-2"
+							class="text-zinc-400 text-[12px] font-medium uppercase tracking-wider xl:mb-0 lg:mb-0 md:mb-2 sm:mb-2 mb-2"
 						>
 							Second word
 						</h1>
@@ -163,8 +163,10 @@ const clearInputs = () => {
 						</button>
 					</div>
 				</div>
-				<div class="z-20 py-6 bg-white rounded-xl">
-					<h1 class="mx-6 mb-5 font-semibold tracking-wider text-black uppercase">
+				<div class="z-20 py-6 bg-white rounded-xl box-shadow">
+					<h1
+						class="mx-6 mb-5 font-semibold tracking-widest text-black uppercase text-[14px]"
+					>
 						Anagram check results
 					</h1>
 					<h1
@@ -172,7 +174,7 @@ const clearInputs = () => {
 							'text-green-500': resultMessage === 'A valid anagram :)',
 							'text-red-500': resultMessage === 'Not a valid anagram :(',
 							'text-orange-500': resultMessage === 'Both inputs must be filled',
-							'text-[30px]': true,
+							'text-[25px]': true,
 							'font-bold': true,
 							'px-6': true,
 						}"
@@ -183,7 +185,7 @@ const clearInputs = () => {
 						class="border-b-[1px] border-zinc-800 border-opacity-10 mt-[100px] mb-10"
 					></div>
 					<h2
-						class="text-[16px] font-medium mt-2 mx-6 uppercase text-zinc-500"
+						class="text-[14px] font-medium mt-2 mx-6 uppercase text-zinc-500"
 						v-if="resultDetails"
 					>
 						{{ resultDetails }}
@@ -191,7 +193,7 @@ const clearInputs = () => {
 				</div>
 			</div>
 			<p
-				class="z-30 text-white absolute xl:bottom-[200px] lg:bottom-[200px] md:bottom-[100px] sm:bottom-[100px] bottom-[100px] uppercase text-[12px]"
+				class="z-30 text-white absolute xl:bottom-[200px] lg:bottom-[200px] md:bottom-[100px] sm:bottom-[100px] bottom-[50px] uppercase text-[12px]"
 			>
 				Developed by: John Kenneth Teodoro
 			</p>
@@ -206,7 +208,7 @@ const clearInputs = () => {
 	background-size: 60px 60px;
 }
 
-/* * {
-	border: 1px solid red;
-} */
+.box-shadow {
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 </style>
