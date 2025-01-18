@@ -71,7 +71,9 @@ const clearInputs = () => {
 
 <template>
 	<div class="bg-zinc-900 h-screen">
-		<div class="bg-layout absolute inset-0 m-auto w-full h-screen opacity-20 z-10"></div>
+		<div
+			class="bg-layout absolute inset-0 m-auto w-full h-screen opacity-20 z-10 blur-[1.5px]"
+		></div>
 		<div class="xl:block lg:block md:hidden sm:hidden hidden">
 			<div
 				class="bg-zinc-900 rounded-b-full w-[300px] h-[150px] absolute z-20 left-[500px]"
@@ -96,10 +98,10 @@ const clearInputs = () => {
 		<h1
 			class="flex gap-5 justify-center absolute xl:top-32 lg:top-32 md:top-8 sm:top-8 top-8 text-white text-center w-full text-[25px] uppercase tracking-widest font-extrabold z-30"
 		>
-			Gramana
+			Anagram
 		</h1>
 		<ul
-			class="flex gap-10 text-[14px] justify-center absolute xl:top-56 lg:top-56 md:top-28 sm:top-28 top-28 text-zinc-500 underline text-center w-full z-20 uppercase"
+			class="flex gap-16 text-[14px] justify-center absolute xl:top-56 lg:top-56 md:top-28 sm:top-28 top-28 text-zinc-500 font-semibold text-center w-full z-20 uppercase"
 		>
 			<li><a href="">About</a></li>
 			<li><a href="">Checker</a></li>
@@ -171,7 +173,9 @@ const clearInputs = () => {
 					>
 						{{ resultMessage ? resultMessage : "Type your words ..." }}
 					</h1>
-					<div class="border-b-[1px] border-zinc-800 border-opacity-10 mt-[75px]"></div>
+					<div
+						class="border-b-[1px] border-zinc-800 border-opacity-10 mt-[75px] mb-10"
+					></div>
 					<h2
 						class="text-[16px] font-medium mt-2 mx-6 uppercase text-zinc-500"
 						v-if="resultDetails"
