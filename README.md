@@ -1,6 +1,6 @@
 # anagramApp
 
-A simple web app built with Vue.js for the frontend and Tailwind CSS for styling. This app allows users to input a word and generates all possible anagrams of that word.
+A simple web app built with Vue.js and styled with Tailwind CSS. It allows users to input two words and check if they are anagrams of each other.
 
 ## Features
 
